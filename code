@@ -3,6 +3,7 @@ rule urls_ips_commons
 	meta:
 		author = "Saulo 'Sal' Ortiz, Sr. Cyber Forensics Analyst"
 		description = "Pulls any URLs and IPs used in SolarMarker campaign"
+		reference = "https://github.com/ortizimo/solarmarker_urls_ips.yar/blob/main/code"
 		date = "2021-12-10"
 		in_the_wild = "True"
 						
@@ -14,7 +15,7 @@ rule urls_ips_commons
 		$a4 = /\/\/[a-z0-9\.\/]{3,90}\.ml\// nocase ascii
 		$a5 = /\/\/[a-z0-9\.\/]{3,90}\.cf\// nocase ascii
 		
-// Uncomment line below to pull all IPv4
+// Uncomment line below to pull all IPv4 from image
 		//$ipv4 = /([0-9]{1,3}\.){3}[0-9]{1,3}/ ascii
 
 	condition:
