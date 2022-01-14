@@ -1,0 +1,22 @@
+rule urls_ips_commons
+{
+	meta:
+		author = "Saulo 'Sal' Ortiz, Sr. Cyber Forensics Analyst"
+		description = "Pulls any URLs and IPs used in SolarMarker campaign"
+		date = "2021-12-10"
+		in_the_wild = "True"
+						
+	strings:
+// Any URL with specific top-level domain
+		$a1 = /\/\/[a-z0-9\.\/]{3,90}\.tk\// nocase ascii
+		$a2 = /\/\/[a-z0-9\.\/]{3,90}\.site\// nocase ascii
+		$a3 = /\/\/[a-z0-9\.\/]{3,90}\.ga\// nocase ascii
+		$a4 = /\/\/[a-z0-9\.\/]{3,90}\.ml\// nocase ascii
+		$a5 = /\/\/[a-z0-9\.\/]{3,90}\.cf\// nocase ascii
+		
+// Uncomment line below to pull all IPv4
+		//$ipv4 = /([0-9]{1,3}\.){3}[0-9]{1,3}/ ascii
+
+	condition:
+		any of them
+}
