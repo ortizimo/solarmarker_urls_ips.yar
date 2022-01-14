@@ -14,6 +14,17 @@ rule urls_ips_commons
 		$a3 = /\/\/[a-z0-9\.\/]{3,90}\.ga\// nocase ascii
 		$a4 = /\/\/[a-z0-9\.\/]{3,90}\.ml\// nocase ascii
 		$a5 = /\/\/[a-z0-9\.\/]{3,90}\.cf\// nocase ascii
+		$a6 = /\/\/[a-z0-9\.\/]{3,90}\.cn\// nocase ascii
+		$a7 = /\/\/[a-z0-9\.\/]{3,90}\.ru\// nocase ascii
+		$a8 = /\/\/[a-z0-9\.\/]{3,90}\.fm\// nocase ascii
+		$a9 = /\/\/[a-z0-9\.\/]{3,90}\.eu\// nocase ascii
+		$a10 = /\/\/[a-z0-9\.\/]{3,90}\.su\// nocase ascii
+		$a11 = /\/\/[a-z0-9\.\/]{3,90}\.xyz\// nocase ascii
+		$a12 = /\/\/[a-z0-9\.\/]{3,90}\.at\// nocase ascii
+		$a13 = /\/\/[a-z0-9\.\/]{3,90}\.de\// nocase ascii
+		$a14 = /\/\/[a-z0-9\.\/]{3,90}\.me\// nocase ascii
+		$a15 = /\/\/[a-z0-9\.\/]{3,90}\.ws\// nocase ascii
+		$a16 = /\/\/[a-z0-9\.\/]{3,90}\.hu\// nocase ascii
 		
 // Uncomment line below to pull all IPv4 from image
 		//$ipv4 = /([0-9]{1,3}\.){3}[0-9]{1,3}/ ascii
