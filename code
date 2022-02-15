@@ -1,7 +1,7 @@
 rule urls_ips_commons
 {
 	meta:
-		author = "Saulo 'Sal' Ortiz, Sr. Cyber Forensics Analyst"
+		author = "Saulo 'Sal' Ortiz, Sr. Cyber Forensics Analyst, ATG"
 		description = "Pulls any URLs and IPs used in SolarMarker campaign"
 		reference = "https://github.com/ortizimo/solarmarker_urls_ips.yar/blob/main/code"
 		date = "2021-12-10"
